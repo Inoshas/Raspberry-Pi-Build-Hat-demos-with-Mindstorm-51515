@@ -9,13 +9,13 @@ min_intensity=0
 target_light=50
 
 
-color=['red', 'blue', 'green', 'yellow']
+color=['red', 'blue', 'green', 'yellow', 'black', 'pink']
 current_error=[]
 
 current_speed_left=[]
 current_speed_right=[]
 
-kp=[.1, .3, .5, 1.8]
+kp=[.1, .3, .5, 1.8 ,2.4]
 
 
 count=0
