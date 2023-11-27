@@ -28,37 +28,33 @@ This project aims to demonstrate the integration of Raspberry Pi with the Mindst
 ### Installation
 
 1. Clone this repository:
+    ```bash
+    git clone https://github.com/Inoshas/Raspberry-Pi-Build-Hat-demos-with-Mindstorm-51515
 
-   ```bash
-   git clone https://github.com/Inoshas/Raspberry-Pi-Build-Hat-demos-with-Mindstorm-51515
 Navigate to the project directory:
+    ```bash
+    cd your-repository 
 
-bash
-Copy code
-cd your-repository 
-Install project dependencies:
-
-bash
-Copy code
-sudo apt update
-sudo apt install python3-buildhat
+    Install project dependencies:
+    ```bash
+    sudo apt update
+    sudo apt install python3-buildhat
 Note: Replace python3 with python if your system uses Python 2.x.
 
-Other Dependencies:
-time: Standard Python library for time-related functions.
+#### Other Dependencies:
+**time:** Standard Python library for time-related functions.
 
-datetime: Standard Python library for working with dates and times. (Note: The import statement from datetime import datetime is used in the code.)
+**datetime:** Standard Python library for working with dates and times. (Note: The import statement from datetime import datetime is used in the code.)
 
-os: Standard Python library for interacting with the operating system.
+**os:** Standard Python library for interacting with the operating system.
 
 Ensure that these standard libraries are available in your Python environment.
 
-Usage
+## File Structure
 Setup Motors and Sensors:
 
 Initialize the motors and sensors using the following setup:
-
-    python
+    ```python
     # Create a motor pair with motors connected to ports 'A' and 'B'
     pair = MotorPair('A', 'B')
 
@@ -77,8 +73,7 @@ Run Tests or Scripts:
 Execute the provided scripts or write your own tests using the initialized motors and sensors. Adjust the scripts according to your specific use case.
 
 Example script using the initialized motors and sensors:
-
-    python
+    ```python
     # Move the motor pair forward at 50% speed
     pair.forward(50) 
     # Get the current color value 
@@ -94,7 +89,9 @@ Example script using the initialized motors and sensors:
 
 **turning_motor.py:** This script, turning_motor.py, demonstrates the control of a motor pair ('A' and 'B') for various movements, including forward, backward, and turning left.
 
-**path_follower.py:** The path_follower.py script implements a basic path-following algorithm using a PID controller.
+**propotional_behaviour.py:** This is a supporting file to analyze the the effect of proportional gain (kp) on motor speed in a control system. This can be used to understand the speed variartion changes use for path_follower.py
+
+**path_follower.py:** The path_follower.py script implements a basic path-following algorithm using a PID controller. 
 
 **path_follower_PD.py:** The path_follower_PD.py script implements a basic path-following algorithm using a PD controller.
 
