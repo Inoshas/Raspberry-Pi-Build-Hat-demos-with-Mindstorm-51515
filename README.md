@@ -73,8 +73,9 @@ Run Tests or Scripts:
 
 Execute the provided scripts or write your own tests using the initialized motors and sensors. Adjust the scripts according to your specific use case.
 
-Example script using the initialized motors and sensors:
-    ```python
+Example script using the initialized motors and sensors: 
+
+    python
     # Move the motor pair forward at 50% speed
     pair.forward(50) 
     # Get the current color value 
