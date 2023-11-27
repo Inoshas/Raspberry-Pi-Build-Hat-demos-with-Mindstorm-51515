@@ -31,12 +31,14 @@ This project aims to demonstrate the integration of Raspberry Pi with the Mindst
     ```bash
     git clone https://github.com/Inoshas/Raspberry-Pi-Build-Hat-demos-with-Mindstorm-51515
 
-Navigate to the project directory:
+Navigate to the project directory: 
     ```bash
+
     cd your-repository 
 
-    Install project dependencies:
+Install project dependencies:
     ```bash
+
     sudo apt update
     sudo apt install python3-buildhat
 Note: Replace python3 with python if your system uses Python 2.x.
